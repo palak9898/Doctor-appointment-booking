@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Appointment</title>
+  
+  <link rel="stylesheet" href="appointmentstyle.css">
+</head>
+<body>
+
+  <div class="appointment-form-container">
+    <h2>Book an Appointment</h2>
+    <form action="submit_appointment.php" method="POST">
+
+      <label for="doctor">Select Doctor</label>
+      <select id="doctor" name="doctor" required>
+        <option value="">-- Choose a Doctor --</option>
+        <option value="Dr. Aarti Sharma">Dr. Aarti Sharma - Cardiologist</option>
+        <option value="Dr. Rahul Mehta">Dr. Rahul Mehta - Dermatologist</option>
+        <option value="Dr. Sneha Kapoor">Dr. Sneha Kapoor - Neurologist</option>
+      </select>
+
+      <label for="name">Your Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Preferred Time</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="reason">Reason for Visit</label>
+      <textarea id="reason" name="reason" placeholder="Briefly describe your concern..." required></textarea>
+
+      <button type="submit">Book Appointment</button>
+    </form>
+
+    <div class="back-link">
+      <a href="index.html">← Back to Doctor List</a>
+    </div>
+  </div>
+
+</body>
+</html>
